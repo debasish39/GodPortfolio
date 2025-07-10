@@ -4,7 +4,7 @@
   color: hsl(0, 55%, 48%);
 }
 body {
-  background-color: #191818;
+  background-color: black;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   overflow-x:hidden;
