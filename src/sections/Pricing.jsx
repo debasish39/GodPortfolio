@@ -21,7 +21,7 @@ export default function Pricing() {
   );
 
   return (
-    <div id="pricing" className="w-full lg:px-[200px] px-8 py-[60px] h-full flex flex-col items-center gap-10">
+    <div id="pricing" className="w-full lg:px-[200px] px-8 py-[60px] h-full flex flex-col items-center gap-4">
       {/* Section Header */}
       <h1
         className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-white font-poppins font-semibold text-center sm:text-left"

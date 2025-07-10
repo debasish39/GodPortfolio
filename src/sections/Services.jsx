@@ -3,19 +3,16 @@ import {
   FaLightbulb,
   FaHandsHelping,
   FaPrayingHands,
-  FaHeart
+  FaHeart,
 } from 'react-icons/fa';
-import { FaArrowRightLong } from 'react-icons/fa6'; // ✅ FIXED: Correct import
+import { FaArrowRightLong } from 'react-icons/fa6';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Services() {
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
-    AOS.refresh(); // ✅ Ensures AOS animations work after mount
+    AOS.init({ duration: 800, once: false });
+    AOS.refresh();
   }, []);
 
   const divineAttributes = [
@@ -48,28 +45,31 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full lg:px-[126px] px-8 lg:py-[100px] py-[60px] flex flex-col gap-[80px] text-white"
+      className="w-full lg:px-[126px] px-6 sm:px-8 py-[60px] lg:py-[100px] flex flex-col gap-[80px] text-white"
     >
       {/* Title Section */}
-      <div className="lg:w-[60%] w-full flex flex-col items-start gap-6">
+      <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center gap-6">
         <h1
           data-aos="zoom-in"
-          className="text-4xl uppercase font-poppins font-semibold text-white"
+          className="text-3xl sm:text-4xl uppercase font-poppins font-semibold tracking-tight"
         >
           Divine Gifts
         </h1>
-        <div className="h-[3px] w-20 bg-red-600" data-aos="zoom-in"></div>
-        <p className="text-gray-300 text-lg font-poppins" data-aos="fade-up">
+        <div className="h-[3px] w-16 sm:w-20 bg-red-600" data-aos="zoom-in"></div>
+        <p
+          className="text-gray-300 text-base sm:text-lg font-poppins leading-relaxed"
+          data-aos="fade-up"
+        >
           These are not services of man, but sacred gifts from the Divine. Offered not for profit, but for the soul. Feel His presence in every moment.
         </p>
       </div>
 
       {/* Divine Attribute Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 max-w-6xl mx-auto">
         {divineAttributes.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-start gap-6"
+            className="flex flex-col items-center text-center gap-6"
             data-aos={service.aos}
             data-aos-delay={index * 100}
           >
@@ -84,19 +84,21 @@ export default function Services() {
 
             {/* Content */}
             <div
-              className="flex flex-col items-start gap-3"
-              data-aos="fade-right"
+              className="flex flex-col items-center gap-3"
+              data-aos="fade-up"
               data-aos-delay={index * 100 + 200}
             >
-              <h2 className="text-white font-semibold text-[24px]">
+              <h2 className="text-white font-semibold text-xl sm:text-2xl">
                 {service.title}
               </h2>
-              <p className="text-gray-300 text-justify">{service.desc}</p>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                {service.desc}
+              </p>
             </div>
 
             {/* Button */}
             <button
-              className="text-red-600 hover:text-white text-[17px] font-poppins flex items-center gap-2 transition-colors duration-200 cursor-pointer"
+              className="text-red-600 hover:text-white text-base font-poppins flex items-center gap-2 transition-colors duration-200"
               data-aos="fade-left"
               data-aos-delay={index * 100 + 300}
             >

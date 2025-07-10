@@ -35,6 +35,17 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
+  useEffect(() => {
+  if (menuOpen) {
+    document.body.classList.add('overflow-hidden');
+  } else {
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  // ✅ Cleanup: runs when component unmounts or before re-run
+  return () => document.body.classList.remove('overflow-hidden');
+}, [menuOpen]);
+
 
   return (
     <>
@@ -123,6 +134,7 @@ export default function Header() {
               duration={500}
               offset={-80}
               onClick={() => setMenuOpen(false)}
+              activeClass="text-[#e50914] font-semibold"
               className="text-lg px-2 py-1 rounded hover:bg-[#e50914] hover:text-white transition cursor-pointer"
             >
               {item.name}
