@@ -25,6 +25,11 @@ export default function Testimonials() {
       >
         Voices of Devotion
       </h2>
+      <div
+        className="w-20 h-[3px] bg-red-600 mt-4 mb-10"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      ></div>
       <p
         className="text-gray-400 text-lg text-center mt-4 max-w-2xl"
         data-aos="fade-up"
@@ -32,11 +37,7 @@ export default function Testimonials() {
       >
         These are not just testimonials — they are heartfelt offerings, reflections, and praises to the Supreme Creator, Ishwar.
       </p>
-      <div
-        className="w-20 h-[3px] bg-red-600 mt-4 mb-10"
-        data-aos="zoom-in"
-        data-aos-delay="200"
-      ></div>
+      
 
       {/* Testimonials Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-full">
