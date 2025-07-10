@@ -9,10 +9,11 @@ import Cta from './sections/Cta';
 import Footer from './sections/Footer';
 import About from './sections/About';
 import ScrollToTop from './sections/ScrollToTop';
-
+import ScrollProgress from './sections/ScrollProgress';
 export default function App() {
   return (
     <div className="overflow-x-hidden w-full max-w-screen-2xl mx-auto">
+      <ScrollProgress /> 
       <Header />
       <div className="mb-10" />
       <Hero />
