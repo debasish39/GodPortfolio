@@ -49,18 +49,19 @@ export default function Projects() {
             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Spiritual Marketplace</h3>
-            <p className="text-gray-400 mb-4">
-              A platform built to help connect seekers with sacred items like prayer beads, books, and incense — with ethical trade and purity in mind.
-            </p>
-            <a
-              href="https://vignanam.org/odia/shiva-suvarnamala-swarnamala-stuti.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-red-600 hover:text-white transition cursor-pointer"
-            >
-              View Offering <FaArrowRightLong />
-            </a>
+           <h3 className="text-xl font-semibold mb-2">Bhagavad Gita Portal</h3>
+<p className="text-gray-400 mb-4">
+  A sacred space offering the timeless wisdom of the Bhagavad Gita — with original Sanskrit verses, transliterations, and detailed commentary to guide seekers on the path of Dharma and devotion.
+</p>
+<a
+  href="https://www.holy-bhagavad-gita.org/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-red-600 hover:text-white transition cursor-pointer"
+>
+  View Offering <FaArrowRightLong />
+</a>
+
           </div>
         </div>
 
@@ -76,18 +77,19 @@ export default function Projects() {
             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Divine Portfolio</h3>
-            <p className="text-gray-400 mb-4">
-              A personal site crafted in reverence to Ishwar — not to promote the self, but to reflect His light through the skills He gave.
-            </p>
-            <a
-              href="https://www.holy-bhagavad-gita.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-red-600 hover:text-white transition cursor-pointer"
-            >
-              View Offering <FaArrowRightLong />
-            </a>
+           <h3 className="text-xl font-semibold mb-2">Shiva Swarnamala Stuti</h3>
+<p className="text-gray-400 mb-4">
+  A devotional hymn in Sanskrit—Shiva Suvarnamala Stotra is a golden garland of praise offered at the feet of Lord Shiva, evoking His grace, strength, and divine presence through poetic devotion.
+</p>
+<a
+  href="https://vignanam.org/odia/shiva-suvarnamala-swarnamala-stuti.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-red-600 hover:text-white transition cursor-pointer"
+>
+  View Offering <FaArrowRightLong />
+</a>
+
           </div>
         </div>
       </div>

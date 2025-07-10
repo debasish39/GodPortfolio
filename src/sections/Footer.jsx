@@ -8,12 +8,21 @@ import {
 export default function Footer() {
   return (
     <footer className="w-full bg-[#1A1A1A] text-gray-400 text-sm border-t border-t-red-600 shadow-inner">
-      <div className="max-w-6xl mx-auto px-6 py-3 flex flex-col items-center gap-2">
+      <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center text-center ">
+        
+        {/* Sacred Quote */}
+        <p className="text-sm text-gray-300 italic max-w-xl">
+          “ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति” — "The Lord dwells in the hearts of all beings." (Bhagavad Gita 18.61)
+        </p>
+
+        {/* Divider */}
+        <div className="w-20 h-[2px] bg-red-600 my-2" />
+
         {/* Title */}
         <h2 className="text-white text-xl font-semibold">Connect with me</h2>
 
         {/* Social Icons with Tooltips */}
-        <div className="flex gap-6 relative">
+        <div className="flex gap-6 justify-center mt-1">
           {/* GitHub */}
           <div className="group relative">
             <a
@@ -58,11 +67,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="w-full h-px bg-gray-700/50 mt-6" />
-
         {/* Copyright */}
-        <p className="text-gray-500 text-center">
+        <p className="text-gray-500 text-sm mt-4">
           &copy; {new Date().getFullYear()} <span className="text-white font-medium">God Portfolio</span>. All rights reserved.
         </p>
       </div>

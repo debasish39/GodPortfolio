@@ -64,10 +64,8 @@ export default function Testimonials() {
         ))}
       </div>
 
-      {/* Optional: Add sacred quote below */}
-      <p className="text-center text-sm text-gray-300 mt-10 italic">
-        “ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति” — *The Lord dwells in the hearts of all beings.* (Bhagavad Gita 18.61)
-      </p>
+
+
     </section>
   );
 }

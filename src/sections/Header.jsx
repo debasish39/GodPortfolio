@@ -40,15 +40,27 @@ export default function Header() {
     <>
       {/* Header */}
       <header
-        className={`bg-[#1e1e1e] py-4 lg:px-20 px-6 fixed top-0 left-0 w-full z-50 shadow-md border-b border-neutral-800 transition-transform duration-300 ${
+        className={`bg-[#100a0a] py-4 lg:px-20 px-6 fixed top-0 left-0 w-full z-50 shadow-md border-b border-red-800 transition-transform duration-300 ${
           showNavbar ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-3xl font-bold text-[#e50914] select-none cursor-grab">
-            God
-          </div>
+        <div
+  style={{
+    fontSize:'2rem',
+    fontWeight: '900',
+    color: '#e50914',
+    userSelect: 'none',
+    cursor: 'grab',
+    fontFamily: '"Dancing Script", cursive',
+    textShadow:'1px 1px 3px #dc2626'
+  }}
+>
+  God
+</div>
+
+
 
           {/* Mobile Toggle Button */}
           <button
@@ -88,7 +100,7 @@ export default function Header() {
 
       {/* Offcanvas Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[75%] max-w-xs bg-[#1e1e1e] z-50 p-6 shadow-lg border-l border-red-600 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-[75%] max-w-xs bg-[#100A0A] z-50 p-6 shadow-lg border-l border-red-600 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         } md:hidden`}
       >

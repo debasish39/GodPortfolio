@@ -1,12 +1,13 @@
 @import "tailwindcss";
 ::selection{
   background-color: #000000;
-  color: hsl(0, 100%, 95%);
+  color: hsl(0, 55%, 48%);
 }
 body {
-  background-color: #202020;
+  background-color: #191818;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
 .overflow-hidden{
