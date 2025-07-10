@@ -1,12 +1,39 @@
-# React + Vite
+🙏 God Portfolio — React + Vite
+This project is a devotional portfolio website built using React and Vite, dedicated in reverence to the Divine — inspired by sacred mantras, spiritual offerings, and modern web design practices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Tech Stack
+⚛️ React — UI framework
 
-Currently, two official plugins are available:
+⚡ Vite — Lightning-fast build tool with HMR
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎨 Tailwind CSS — Utility-first responsive styling
 
-## Expanding the ESLint configuration
+🎞 AOS (Animate On Scroll) — Scroll-triggered animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎯 React Icons — Icon library (GitHub, Email, Instagram, etc.)
+
+🧭 Project Sections
+Hero: Mantra with sacred introduction
+
+Projects: Offerings like spiritual marketplaces and divine portfolios
+
+Testimonials: Reflections and praises to Ishwar from seekers
+
+Footer: Sacred quote, social links, and contact
+🔧 Getting Started
+1.Clone the repository:
+git clone https://github.com/debasish39/god-portfolio.git
+cd god-portfolio
+Install dependencies
+npm install
+Run development server
+npm run dev
+🧹 Linting & Code Quality
+Basic ESLint rules included
+
+You can extend with Prettier or typescript-eslint if needed
+📚 Sacred Mantra Used
+“ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति”
+"The Lord dwells in the hearts of all beings."
+— Bhagavad Gita 18.61
+
