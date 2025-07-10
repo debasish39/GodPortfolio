@@ -31,7 +31,7 @@ export default function Testimonials() {
         data-aos-delay="200"
       ></div>
       <p
-        className="text-gray-400 text-lg text-center mt-4 max-w-2xl"
+        className="text-gray-400 text-lg text-center mt-4 max-w-2xl mb-3"
         data-aos="fade-up"
         data-aos-delay="150"
       >
