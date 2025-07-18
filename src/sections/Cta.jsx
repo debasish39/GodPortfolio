@@ -37,7 +37,7 @@ export default function Cta() {
           data-aos-delay="400"
           className="bg-red-600 hover:bg-white text-white hover:text-red-600 font-semibold text-base sm:text-lg px-6 py-3 rounded-lg 
             flex items-center gap-2 transition duration-300 
-            hover:shadow-[0_0_24px_rgba(239,68,68,0.6)]"
+            hover:shadow-[0_0_24px_rgba(239,68,68,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:scale-[0.97]"
         >
           Connect in Devotion <FaArrowRightLong />
         </a>

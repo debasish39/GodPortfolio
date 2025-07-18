@@ -21,22 +21,21 @@ export default function Hero() {
     >
       {/* Left Content */}
       <div className="md:w-1/2 w-full space-y-6 text-center md:text-left">
-<h2
-  data-aos="fade-down"
-  data-aos-delay="100"
-  style={{
-    color: '#dc2626',
-    fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', // Responsive: 32px to 40px
-    fontWeight: 600,
-    fontFamily: '"Dancing Script", cursive',
-    textAlign: 'center',
-    textShadow: '1px 1px 3px #dc2626' // soft shadow
-  }}
-  className="md:text-left"
->
-  Om Namo Bhagavate Vasudevaya
-</h2>
-
+        <h2
+          data-aos="fade-down"
+          data-aos-delay="100"
+          style={{
+            color: '#dc2626',
+            fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+            fontWeight: 600,
+            fontFamily: '"Dancing Script", cursive',
+            textAlign: 'center',
+            textShadow: '1px 1px 3px #dc2626',
+          }}
+          className="md:text-left"
+        >
+          Om Namo Bhagavate Vasudevaya
+        </h2>
 
         <h2
           data-aos="fade-up"
@@ -57,7 +56,7 @@ export default function Hero() {
         <button
           data-aos="zoom-in"
           data-aos-delay="400"
-          className="bg-red-600 hover:bg-white text-white hover:text-red-600 font-semibold text-base sm:text-lg px-6 py-3 rounded-lg transition duration-300 cursor-pointer"
+          className="bg-red-600 hover:bg-white text-white hover:text-red-600 focus:ring-4 focus:ring-red-300 active:scale-95 focus:outline-none font-semibold text-base sm:text-lg px-6 py-3 rounded-lg transition duration-300 cursor-pointer"
         >
           Glory to God
         </button>
@@ -83,7 +82,7 @@ export default function Hero() {
             alt="divine"
             data-aos="zoom-in"
             data-aos-delay="300"
-            className="rounded-xl shadow-lg w-full h-full object-cover relative z-20 transition-transform duration-300 hover:scale-105"
+            className="rounded-xl shadow-lg w-full h-full object-cover relative z-20 transition-transform duration-300 hover:scale-105 active:scale-100 focus:outline-none"
           />
 
           {/* Decorative image */}

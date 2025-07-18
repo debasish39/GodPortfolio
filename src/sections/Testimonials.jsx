@@ -45,7 +45,8 @@ export default function Testimonials() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="bg-[#1a1a1a] p-5 sm:p-6 rounded-xl shadow-lg hover:shadow-red-600/30 transition-all duration-300"
+            tabIndex={0}
+            className="bg-[#1a1a1a] p-5 sm:p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-red-600/30 focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:outline-none active:scale-[0.98]"
             data-aos="fade-up"
             data-aos-delay={`${300 + index * 100}`}
           >
@@ -60,8 +61,12 @@ export default function Testimonials() {
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-red-600"
               />
               <div>
-                <h4 className="text-white font-semibold text-sm sm:text-base">{review.name}</h4>
-                <p className="text-gray-400 text-xs sm:text-sm italic">{review.post}</p>
+                <h4 className="text-white font-semibold text-sm sm:text-base">
+                  {review.name}
+                </h4>
+                <p className="text-gray-400 text-xs sm:text-sm italic">
+                  {review.post}
+                </p>
               </div>
             </div>
           </div>
