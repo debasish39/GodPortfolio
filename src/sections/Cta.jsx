@@ -30,24 +30,30 @@ export default function Cta() {
           Every line of code, every design, every project — let it be a divine offering.
           Surrender your craft to Ishwar, and walk the path of purpose, clarity, and creation.
         </p>
-
-       <a
+<a
   href="mailto:djproject963@gmail.com"
   data-aos="zoom-in"
   data-aos-delay="400"
   className="bg-red-600 text-white 
-    lg:hover:bg-white lg:hover:text-red-600
-    font-semibold text-base sm:text-lg lg:text-xl px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg 
-    flex items-center gap-2 
-    transition-colors duration-300 
-    lg:hover:shadow-[0_0_24px_rgba(239,68,68,0.6)] 
-    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 
-    active:scale-[0.97] 
-    focus:shadow-[0_0_24px_rgba(239,68,68,0.6)]"
->
+    font-semibold text-base sm:text-lg lg:text-xl 
+    px-6 sm:px-8 lg:px-10 py-3 sm:py-4 
+    rounded-lg flex items-center gap-2 
+    transition duration-300 
+    shadow-md
 
-          Connect in Devotion <FaArrowRightLong className="text-lg sm:text-xl" />
-        </a>
+    hover:bg-white hover:text-red-600
+    hover:shadow-[0_0_24px_rgba(239,68,68,0.6)]
+
+    focus:outline-none 
+    focus:bg-white focus:text-red-600
+    focus:shadow-[0_0_24px_rgba(239,68,68,0.6)]
+
+    active:bg-white active:text-red-600 active:scale-95"
+>
+  Connect in Devotion
+  <FaArrowRightLong className="text-lg sm:text-xl" />
+</a>
+
       </div>
     </section>
   );

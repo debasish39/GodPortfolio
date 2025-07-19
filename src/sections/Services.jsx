@@ -47,22 +47,7 @@ export default function Services() {
       id="services"
       className="w-full px-4 sm:px-6 lg:px-32 py-16 sm:py-20 text-white bg-black"
     >
-      {/* Sanskrit Verse */}
-      <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 space-y-2">
-        <h2
-          className="text-[#d91822] font-semibold italic text-base sm:text-lg"
-          data-aos="fade-up"
-        >
-          कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।
-        </h2>
-        <p
-          className="text-gray-400 text-xs sm:text-sm italic"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          “You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.” — Bhagavad Gita 2.47
-        </p>
-      </div>
+    
 
       {/* Title Section */}
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center gap-5">

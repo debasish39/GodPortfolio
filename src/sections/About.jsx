@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaArrowRight } from "react-icons/fa"; // Make sure this is imported
 
 export default function About() {
   useEffect(() => {
@@ -72,18 +73,24 @@ export default function About() {
         </p>
 
         {/* CTA Button */}
-        <a
-          href="#cta"
-          className="inline-block bg-red-600 
-            hover:bg-white hover:text-red-600
-            text-white font-semibold text-base sm:text-lg px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg 
-            transition duration-300 
-            focus:outline-none focus:ring-4 focus:ring-red-400 
-            active:bg-white active:text-red-600 
-            active:scale-95 focus:scale-95"
-        >
-          Offer Your Gratitude
-        </a>
+      <a
+  href="#cta"
+  data-aos="fade-up"
+  data-aos-delay="200"
+  className="inline-flex items-center justify-center gap-2
+    bg-red-600 
+    hover:bg-white hover:text-red-600
+    text-white font-semibold text-base sm:text-lg 
+    px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg 
+    transition duration-300 
+    focus:outline-none focus:ring-4 focus:ring-red-400 
+    active:bg-white active:text-red-600 focus:bg-white focus:text-red-600
+    active:scale-95 focus:scale-95"
+>
+  Offer Your Gratitude
+  <FaArrowRight className="w-4 h-4" />
+</a>
+
       </div>
     </section>
   );
