@@ -46,7 +46,9 @@ export default function Testimonials() {
           <div
             key={index}
             tabIndex={0}
-            className="bg-[#1a1a1a] p-5 sm:p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-red-600/30 focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:outline-none active:scale-[0.98]"
+            className="bg-[#1a1a1a] p-5 sm:p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-red-600/30 focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:outline-none active:scale-[0.98]  hover:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    focus:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    active:shadow-[3px_9px_39px_rgba(220,38,38,0.45)]"
             data-aos="fade-up"
             data-aos-delay={`${300 + index * 100}`}
           >

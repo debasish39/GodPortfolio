@@ -11,7 +11,22 @@ export default function Pricing() {
     AOS.init({ duration: 800, once: false });
   }, []);
 
-  const cardBaseStyle = `flex flex-col items-center justify-between text-center h-full border border-gray-300 hover:border-red-500 bg-[#202020] hover:bg-white/5 backdrop-blur-sm px-6 py-8 rounded-xl text-white transition-all duration-300 shadow-md hover:shadow-red-600/20`;
+  const cardBaseStyle = `
+    flex flex-col items-center justify-between text-center h-full
+    bg-[#202020] px-6 py-8 rounded-xl text-white
+
+    transition-all duration-300
+    shadow-md
+    hover:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    focus:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    active:shadow-[3px_9px_39px_rgba(220,38,38,0.45)]
+
+    hover:scale-[1.01]
+    focus:scale-[1.005]
+    active:scale-[0.97]
+
+    cursor-pointer outline-none
+  `;
 
   const featureItem = (text) => (
     <li className="flex items-center gap-2 text-xs sm:text-sm md:text-base text-gray-300">
@@ -20,27 +35,43 @@ export default function Pricing() {
     </li>
   );
 
+  const buttonStyle = `
+    mt-8 bg-red-600 text-white 
+    hover:bg-white hover:text-red-600 
+    focus:bg-white focus:text-red-600 
+    active:bg-white active:text-red-600 
+    px-6 py-2 rounded-md font-semibold 
+    flex items-center gap-2 justify-center 
+    text-sm sm:text-base transition duration-300 
+    focus:outline-none focus:scale-95 active:scale-90
+  `;
+
   return (
-    <div id="pricing" className="w-full px-4 sm:px-8 lg:px-[200px] py-14 sm:py-[60px] h-full flex flex-col items-center gap-4">
-      {/* Section Header */}
+    <div
+      id="pricing"
+      className="w-full px-4 sm:px-8 lg:px-[200px] py-14 sm:py-[60px] flex flex-col items-center gap-6"
+    >
+      {/* ---------- Section Header ---------- */}
       <h1
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-white font-poppins font-semibold text-center"
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase font-poppins font-semibold text-white text-center"
         data-aos="fade-down"
       >
         Paths to Devotion
       </h1>
-      <div className="w-16 sm:w-20 h-[3px] bg-red-600 rounded" data-aos="zoom-in"></div>
+      <div className="w-16 sm:w-20 h-[3px] bg-red-600 rounded" data-aos="zoom-in" />
       <p
-        className="text-gray-300 w-full lg:w-[70%] text-sm sm:text-base md:text-lg text-center"
+        className="text-gray-300 w-full lg:w-3/4 text-sm sm:text-base md:text-lg text-center"
         data-aos="fade-up"
       >
-        Choose your spiritual path. These are not transactions, but transformations. Every offering here is an invitation to walk closer to God.
+        Choose your spiritual path. These are not transactions, but transformations.
+        Every offering here is an invitation to walk closer to God.
       </p>
 
-      {/* Cards */}
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        {/* Seeker Path */}
-        <div className={cardBaseStyle} data-aos="fade-up" data-aos-delay="100">
+      {/* ---------- Cards Grid ---------- */}
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10">
+
+        {/* --- Seeker Path --- */}
+        <div className={cardBaseStyle} data-aos="fade-up" data-aos-delay="100" tabIndex="0">
           <div className="flex flex-col items-center gap-4">
             <FaSeedling size={63} className="text-green-400" />
             <h2 className="text-xl sm:text-2xl font-semibold">Seeker Path</h2>
@@ -53,16 +84,13 @@ export default function Pricing() {
               {featureItem('Morning Prayer Routine')}
             </ul>
           </div>
-
-          <button
-            className="mt-8 bg-red-600 hover:bg-white hover:text-red-600 px-6 py-2 rounded-md font-semibold flex items-center gap-2 justify-center text-sm sm:text-base transition duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-red-400 active:scale-95"
-          >
+          <button className={buttonStyle}>
             Start the Journey <FaArrowRightLong />
           </button>
         </div>
 
-        {/* Devotee Path */}
-        <div className={cardBaseStyle} data-aos="fade-up" data-aos-delay="200">
+        {/* --- Devotee Path --- */}
+        <div className={cardBaseStyle} data-aos="fade-up" data-aos-delay="200" tabIndex="0">
           <div className="flex flex-col items-center gap-4">
             <GiMeditation size={63} className="text-blue-400" />
             <h2 className="text-xl sm:text-2xl font-semibold">Devotee Path</h2>
@@ -75,16 +103,13 @@ export default function Pricing() {
               {featureItem('Daily Gratitude Rituals')}
             </ul>
           </div>
-
-          <button
-            className="mt-8 bg-red-600 hover:bg-white hover:text-red-600 px-6 py-2 rounded-md font-semibold flex items-center gap-2 justify-center text-sm sm:text-base transition duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-red-400 active:scale-95"
-          >
+          <button className={buttonStyle}>
             Embrace Devotion <FaArrowRightLong />
           </button>
         </div>
 
-        {/* Surrender Path */}
-        <div className={cardBaseStyle} data-aos="fade-up" data-aos-delay="300">
+        {/* --- Surrender Path --- */}
+        <div className={cardBaseStyle} data-aos="fade-up" data-aos-delay="300" tabIndex="0">
           <div className="flex flex-col items-center gap-4">
             <GiAngelWings size={63} className="text-pink-400" />
             <h2 className="text-xl sm:text-2xl font-semibold">Surrender Path</h2>
@@ -97,13 +122,26 @@ export default function Pricing() {
               {featureItem('Life in Alignment with Dharma')}
             </ul>
           </div>
-
-          <button
-            className="mt-8 bg-red-600 hover:bg-white hover:text-red-600 px-6 py-2 rounded-md font-semibold flex items-center gap-2 justify-center text-sm sm:text-base transition duration-300 cursor-pointer focus:outline-none focus:ring-4 focus:ring-red-400 active:scale-95"
-          >
+          <button className={buttonStyle}>
             Walk With God <FaArrowRightLong />
           </button>
         </div>
+      </div>
+
+      {/* ---------- Sanskrit Shloka ---------- */}
+      <div
+        className="mt-10 px-4 sm:px-8 md:px-16 lg:px-24 text-center"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
+        <h2 className="text-[#d91822] text-lg sm:text-xl md:text-2xl font-semibold leading-relaxed">
+          अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।<br />
+          तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्॥
+        </h2>
+        <p className="text-gray-400 text-sm sm:text-base italic mt-2">
+          "Those who worship Me with exclusive devotion, I protect what they have and provide what they need." <br />
+          — Bhagavad Gita 9.22
+        </p>
       </div>
     </div>
   );

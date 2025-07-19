@@ -11,6 +11,16 @@ export default function Projects() {
     AOS.init({ duration: 800, once: false });
   }, []);
 
+  const linkStyle = `
+    inline-flex items-center gap-2 text-red-600
+    hover:text-white transition-all duration-300
+    focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-500
+    active:scale-95
+    hover:shadow-[3px_9px_30px_rgba(239,68,68,0.4)]
+    focus-visible:shadow-[3px_9px_30px_rgba(239,68,68,0.4)]
+    active:shadow-[3px_9px_30px_rgba(239,68,68,0.8)]
+  `;
+
   return (
     <section id="projects" className="w-full px-4 sm:px-6 lg:px-32 py-16 sm:py-20 text-white">
       {/* Header */}
@@ -39,7 +49,11 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
         {/* Project 1 */}
         <div
-          className="rounded-xl overflow-hidden shadow-lg bg-[#1a1a1a] group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/40"
+          className="rounded-xl overflow-hidden shadow-lg bg-[#1a1a1a] group transition-all duration-300
+    hover:-translate-y-2
+    hover:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    focus:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    active:shadow-[3px_9px_39px_rgba(220,38,38,0.45)]"
           data-aos="fade-up"
           data-aos-delay="400"
         >
@@ -57,7 +71,7 @@ export default function Projects() {
               href="https://www.holy-bhagavad-gita.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-red-600 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 active:scale-95"
+              className={linkStyle}
             >
               View Offering <FaArrowRightLong />
             </a>
@@ -66,7 +80,9 @@ export default function Projects() {
 
         {/* Project 2 */}
         <div
-          className="rounded-xl overflow-hidden shadow-lg bg-[#1a1a1a] group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-600/40"
+          className="rounded-xl overflow-hidden shadow-lg bg-[#1a1a1a] group transition-all duration-300 hover:-translate-y-2  hover:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    focus:shadow-[3px_9px_30px_rgba(239,68,68,0.3)]
+    active:shadow-[3px_9px_39px_rgba(220,38,38,0.45)]"
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -84,7 +100,7 @@ export default function Projects() {
               href="https://vignanam.org/odia/shiva-suvarnamala-swarnamala-stuti.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-red-600 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 active:scale-95"
+              className={linkStyle}
             >
               View Offering <FaArrowRightLong />
             </a>
