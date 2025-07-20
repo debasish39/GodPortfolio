@@ -13,7 +13,7 @@ export default defineConfig({
         short_name: 'GOD',
         start_url: '/',
         display: 'standalone',
-         background_color: '#dbeafe',  // Tailwind 'blue-100' for light background
+         background_color: 'black',  // Tailwind 'blue-100' for light background
         theme_color: 'red',       // Tailwind 'indigo-600' to match your button
 
         icons: [
