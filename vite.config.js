@@ -14,7 +14,7 @@ export default defineConfig({
         start_url: '/',
         display: 'standalone',
          background_color: 'black',  // Tailwind 'blue-100' for light background
-        theme_color: 'transparent',       // Tailwind 'indigo-600' to match your button
+        theme_color: 'red',       // Tailwind 'indigo-600' to match your button
 
         icons: [
           {
