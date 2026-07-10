@@ -2,14 +2,14 @@ import React from 'react';
 import {
   FaGithub,
   FaEnvelope,
-  FaInstagram
-} from 'react-icons/fa';
-
+  FaInstagram,
+  FaShieldAlt
+} from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#1A1A1A] text-gray-400 text-sm border-t border-t-red-600 shadow-inner">
       <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center text-center ">
-        
+
         {/* Sacred Quote */}
         <p className="text-sm text-gray-300 italic max-w-xl">
           “ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति” — "The Lord dwells in the hearts of all beings." (Bhagavad Gita 18.61)
@@ -66,7 +66,21 @@ export default function Footer() {
             </span>
           </div>
         </div>
-
+        {/* Privacy Policy */}
+        <div className="mt-6">
+          <a
+            href="/privacy-policy.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 text-gray-400 hover:text-red-500 transition-all duration-300"
+          >
+            <FaShieldAlt className="group-hover:scale-110 transition-transform duration-300" />
+            <span className="relative">
+              Privacy Policy
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+            </span>
+          </a>
+        </div>
         {/* Copyright */}
         <p className="text-gray-500 text-sm mt-4">
           &copy; {new Date().getFullYear()} <span className="text-white font-medium">God Portfolio</span>. All rights reserved.
